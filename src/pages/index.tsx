@@ -17,6 +17,7 @@ export default function Home() {
 
         if (sismoConnectResponse == null) {
             sismoConnect.request({
+                // TODO: read more complex claims from query parameters and pass from [Mobile] to [Vault]
                 auths: [{authType: AuthType.VAULT}]
             });
         } else {
